@@ -1,0 +1,83 @@
+@layer base {
+  :root {
+    /* Custom colors from the image */
+    --background: 218 27% 94%; /* Light blue-gray page background: #EAEFF5 */
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 217 91% 60%; /* Blue button color: #3B82F6 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* Custom variables for this specific design */
+    --custom-header-bg: 218 23% 24%; /* Dark slate card header: #2E3A4C */
+    --custom-header-fg: 0 0% 100%;
+    --custom-dashboard-inner-bg: 220 13% 96%; /* Gray inner card bg: #F3F4F6 */
+  }
+
+  .dark {
+    /* Define dark mode colors if needed, for now we will use the same */
+    --background: 218 27% 94%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 84% 4.9%;
+    
+    --custom-header-bg: 218 23% 24%;
+    --custom-header-fg: 0 0% 100%;
+    --custom-dashboard-inner-bg: 220 13% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
